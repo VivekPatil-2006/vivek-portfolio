@@ -1,0 +1,212 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffc107;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 20px;
+}
+
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-title span {
+  color: #ffc107;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.profile-img {
+  width: 280px;
+  border-radius: 50%;
+  border: 4px solid #ffc107;
+  box-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+  transform: translateX(-15px);
+}
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0.85;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+  40% { transform: translate(-50%, -10px); }
+  60% { transform: translate(-50%, -5px); }
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.bg-soft {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* CARDS */
+.skill-vertical-card,
+.project-card,
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+/* =====================
+   SKILLS SECTION – RESTORED BEAUTIFUL VERSION
+===================== */
+
+.skill-vertical-card {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.08)
+  );
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  padding: 34px 36px;
+  margin-bottom: 40px;
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+/* Hover lift */
+.skill-vertical-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Section titles inside cards */
+.skill-vertical-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ICONS ROW */
+.skill-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.skill-icons i {
+  font-size: 2.4rem;
+  color: #ffc107;
+  opacity: 0.95;
+  transition: transform 0.3s ease;
+}
+
+.skill-icons i:hover {
+  transform: scale(1.15);
+}
+
+/* CORE TAGS */
+.core-tags {
+  margin-top: 12px;
+}
+
+.core-tags span {
+  display: inline-block;
+  background: rgba(255, 193, 7, 0.18);
+  color: #ffc107;
+  padding: 9px 18px;
+  margin: 6px 8px 6px 0;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Increase GitHub & LinkedIn icon size */
+.social-icons a i {
+  font-size: 2.2rem;   /* increase size (default was ~1.6rem) */
+}
+
+/* Optional: slightly bigger on hover */
+.social-icons a:hover i {
+  transform: scale(1.15);
+}
