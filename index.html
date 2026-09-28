@@ -1,183 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Vivek Patil | Software Developer Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vivek Patil | Software Developer & AI / Mobile Engineer</title>
+  <meta name="description" content="Vivek Patil - BE Information Technology Student at PICT Pune (CGPA 9.68, Diploma 95.14%). Software Developer, Android & Flutter Specialist, and AI Systems Enthusiast.">
+  <meta name="keywords" content="Vivek Patil, Software Developer, Android Developer, Flutter, PICT Pune, AI Assistant, LangGraph, React, Node.js, Portfolio">
+  <meta name="author" content="Vivek Patil">
 
-<meta name="description" content="Vivek Patil – Android Developer, Full Stack Enthusiast, BE IT student at PICT with strong skills in Java, React, Firebase, and system design.">
+  <!-- SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='65%' font-size='50' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>VP</text></svg>">
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Vivek Patil | Software Developer Portfolio">
+  <meta property="og:description" content="BE Information Technology student at PICT Pune (CGPA 9.68 | Diploma 95.14%). Android, Flutter & Full Stack Developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vivekpatil-2006.github.io/vivek-portfolio/">
+  <meta property="og:image" content="profile.png">
 
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vivek Patil",
+    "jobTitle": "Software Developer & Android Engineer",
+    "almaMater": "Pune Institute of Computer Technology",
+    "email": "mailto:vivekjpatil04@gmail.com",
+    "telephone": "+919529592099",
+    "sameAs": [
+      "https://github.com/VivekPatil-2006",
+      "https://linkedin.com/in/vivekpatil06",
+      "https://github.com/VivekPatil-2006/OSPilot",
+      "https://github.com/VivekPatil-2006/SIH-Waste-Management",
+      "https://github.com/VivekPatil-2006/MentorTrack-PBL"
+    ]
+  }
+  </script>
 
-<!-- Devicon -->
-<link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Devicon -->
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Vivek Patil</a>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-logo" href="#hero">
+        <div class="logo-box">VP</div>
+        <span>Vivek Patil</span>
+      </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler-custom navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="profile.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-custom active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Contact</a></li>
+          
+          <!-- Theme Picker Dots -->
+          <li class="nav-item ms-lg-2 my-2 my-lg-0">
+            <div class="theme-picker-container" title="Change Accent Theme">
+              <span class="theme-dot dot-indigo" data-theme="default" title="Electric Indigo"></span>
+              <span class="theme-dot dot-cyan" data-theme="cyan" title="Cyber Cyan"></span>
+              <span class="theme-dot dot-emerald" data-theme="emerald" title="Mint Emerald"></span>
+            </div>
+          </li>
+
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="resume.pdf" target="_blank" class="btn-secondary-custom py-2 px-3 text-decoration-none" style="font-size: 0.88rem;">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <div class="row align-items-center">
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>BE IT @ PICT • CGPA 9.68 | Diploma 95.14% • Open to Opportunities</span>
+          </div>
 
-      <div class="col-md-7" data-aos="fade-right">
-        <h1 class="hero-title">
-          Hi, I'm <span>Vivek Patil</span>
-        </h1>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Vivek Patil</span>
+          </h1>
 
-        <p class="hero-subtitle">
-          Android Developer | Full Stack Enthusiast | Problem Solver
-        </p>
+          <div class="hero-subtitle">
+            <span>Software Developer</span>
+            <span class="text-muted-custom">•</span>
+            <span>Android & Flutter</span>
+            <span class="text-muted-custom">•</span>
+            <span>AI & Full Stack</span>
+          </div>
 
-        <p class="mt-3 text-light">
-          BE Information Technology student at Pune Institute of Computer Technology (CGPA 9.73),
-          experienced in building scalable Android, web, and backend systems through real-world
-          projects and internships.
-        </p>
+          <p class="hero-description">
+            Information Technology student at <strong>Pune Institute of Computer Technology (PICT)</strong> with a 9.68 CGPA. Experienced in building multi-role enterprise apps, Flutter/Android platforms, and offline multi-agent AI assistants.
+          </p>
 
-        <div class="mt-4">
-          <a href="profile.html" class="btn btn-warning btn-lg me-2">
-            <i class="fa-solid fa-code"></i> View Projects
-          </a>
+          <!-- Currently Building Ticker -->
+          <div class="mb-4 font-mono text-secondary" style="font-size: 0.88rem;">
+            <span style="color: var(--accent-rose);"><i class="fa-solid fa-bolt"></i> Currently Building:</span>
+            <span style="color: #38bdf8;">OSPilot (Offline LangGraph AI Assistant) & Role-based Flutter ERP Engines</span>
+          </div>
 
-          <a href="resume.pdf" class="btn btn-outline-light btn-lg" download>
-            <i class="fa-solid fa-download"></i> Resume
-          </a>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#projects" class="btn-primary-custom text-decoration-none">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-secondary-custom text-decoration-none">
+              <i class="fa-solid fa-paper-plane"></i> Get in Touch
+            </a>
+            <a href="resume.pdf" target="_blank" class="btn-secondary-custom text-decoration-none" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/VivekPatil-2006" target="_blank" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/vivekpatil06" target="_blank" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <button id="copyEmailBtn" class="social-icon-btn" aria-label="Copy Email" title="Copy Email" data-email="vivekjpatil04@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+            <a href="tel:9529592099" class="social-icon-btn" aria-label="Call Vivek Patil" title="+91 9529592099">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="social-icons mt-4">
-          <a href="https://github.com/VivekPatil-2006" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/vivekpatil06" target="_blank">
-            <i class="fab fa-linkedin"></i>
+        <div class="col-lg-5 text-center" data-aos="fade-left">
+          <div class="profile-frame-container">
+            <div class="profile-frame-glow"></div>
+            
+            <img src="profile.png" alt="Vivek Patil" class="profile-avatar">
+            
+            <div class="floating-tech-badge badge-1">
+              <i class="devicon-flutter-plain text-info"></i>
+              <span>Flutter & Android</span>
+            </div>
+
+            <div class="floating-tech-badge badge-2">
+              <i class="devicon-python-plain text-warning"></i>
+              <span>LangGraph AI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator-custom text-decoration-none">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- QUICK METRICS HIGHLIGHTS -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="stats-grid" data-aos="fade-up">
+        <div class="stat-item">
+          <div class="stat-number text-gradient">9.68</div>
+          <div class="stat-label">CGPA at PICT Pune</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient">95.14%</div>
+          <div class="stat-label">Diploma Percentage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient-gold">#212</div>
+          <div class="stat-label">State Rank / 50k+ Students</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient">2</div>
+          <div class="stat-label">Software Internships</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION & INTERACTIVE TERMINAL -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="section-tag">// 01. About Me</div>
+          <h2 class="section-title-main mb-4">Engineering intelligent applications & robust systems</h2>
+          
+          <p class="text-muted-custom mb-3" style="font-size: 1.05rem;">
+            I am a senior Information Technology undergraduate at <strong>Pune Institute of Computer Technology (PICT)</strong> (BE IT, CGPA 9.68), following a Diploma in Computer Technology from <strong>Bharati Vidyapeeth University</strong> (95.14%).
+          </p>
+
+          <p class="text-muted-custom mb-4">
+            My engineering expertise spans mobile platform development (Flutter, Android Java/XML), full-stack web applications (React, Node.js, FastAPI, Supabase, Firebase), and cutting-edge offline AI agent systems (LangGraph, Ollama LLMs, FAISS RAG engines).
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge-custom"><i class="fa-solid fa-graduation-cap"></i> PICT Pune (BE IT)</span>
+            <span class="badge-custom badge-cyan"><i class="fa-solid fa-mobile-screen"></i> Flutter & Android</span>
+            <span class="badge-custom badge-amber"><i class="fa-solid fa-trophy"></i> State Rank #212</span>
+            <span class="badge-custom badge-emerald"><i class="fa-solid fa-brain"></i> AI & LangGraph</span>
+          </div>
+        </div>
+
+        <!-- Interactive Terminal Window -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot-btn dot-red"></span>
+                <span class="terminal-dot-btn dot-yellow"></span>
+                <span class="terminal-dot-btn dot-green"></span>
+              </div>
+              <div class="terminal-tabs">
+                <button class="terminal-tab-btn active" data-tab="tab-bio">bio.js</button>
+                <button class="terminal-tab-btn" data-tab="tab-stack">stack.sh</button>
+                <button class="terminal-tab-btn" data-tab="tab-contact">contact.env</button>
+              </div>
+            </div>
+
+            <div class="terminal-body">
+              <div id="tab-bio" class="terminal-pane active">
+                <span class="text-muted-custom">// Developer Bio</span><br>
+                <span style="color: #818cf8;">const</span> <span style="color: #38bdf8;">developer</span> = {<br>
+                &nbsp;&nbsp;name: <span style="color: #34d399;">"Vivek Patil"</span>,<br>
+                &nbsp;&nbsp;degree: <span style="color: #34d399;">"BE IT @ PICT Pune (CGPA 9.68)"</span>,<br>
+                &nbsp;&nbsp;diploma: <span style="color: #34d399;">"BVU Computer Tech (95.14%)"</span>,<br>
+                &nbsp;&nbsp;internships: [<span style="color: #34d399;">"Custom Soft"</span>, <span style="color: #34d399;">"LSOYS Games & Apps"</span>],<br>
+                &nbsp;&nbsp;focus: <span style="color: #fbbf24;">"Android, Flutter & Offline Multi-Agent AI"</span><br>
+                };
+              </div>
+
+              <div id="tab-stack" class="terminal-pane">
+                <span class="text-muted-custom"># Technical Environment</span><br>
+                $ <span style="color: #38bdf8;">echo</span> $LANGUAGES<br>
+                <span style="color: #34d399;">> C++, Java, Python, JavaScript, SQL, HTML/CSS</span><br><br>
+                $ <span style="color: #38bdf8;">echo</span> $FRAMEWORKS<br>
+                <span style="color: #34d399;">> Flutter, Android SDK, React.js, Node.js, FastAPI, LangGraph</span><br><br>
+                $ <span style="color: #38bdf8;">echo</span> $DATABASES<br>
+                <span style="color: #34d399;">> Supabase, Firebase, MySQL, MongoDB</span>
+              </div>
+
+              <div id="tab-contact" class="terminal-pane">
+                <span class="text-muted-custom"># Direct Contact Info</span><br>
+                EMAIL=<span style="color: #38bdf8;">"vivekjpatil04@gmail.com"</span><br>
+                PHONE=<span style="color: #38bdf8;">"+919529592099"</span><br>
+                LOCATION=<span style="color: #34d399;">"Pune, Maharashtra, India"</span><br>
+                GITHUB=<span style="color: #818cf8;">"github.com/VivekPatil-2006"</span><br>
+                LINKEDIN=<span style="color: #818cf8;">"linkedin.com/in/vivekpatil06"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION SECTION -->
+  <section id="experience" class="section-padding" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header text-center mx-auto" data-aos="fade-up">
+        <div class="section-tag">// 02. Career & Education</div>
+        <h2 class="section-title-main">Work Experience & Academic Track</h2>
+        <p class="section-desc mx-auto">Industry internships combined with top-tier academic achievements.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Experience Column -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <h3 class="h4 mb-4 d-flex align-items-center gap-2" style="color: var(--accent-cyan);">
+            <i class="fa-solid fa-briefcase"></i> Software Internships
+          </h3>
+
+          <div class="timeline-container">
+
+            <!-- Custom Soft -->
+            <div class="timeline-card glass-card-custom">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">JAN 2026 – APR 2026</span>
+              <h4 class="timeline-role">Software Developer Intern</h4>
+              <div class="timeline-org">Custom Soft, Pune</div>
+              <ul class="timeline-bullets">
+                <li>Developed role-based Flutter applications for Business ERP and Hotel Desk, building modules for Admin, Client, Sales Manager, and Booking Manager workflows.</li>
+                <li>Implemented OTP authentication, ordering pipelines, analytics dashboards, notifications, Google Maps integration, and profile management using Flutter, React, Node.js, Firebase, and Supabase.</li>
+                <li>Contributed to web hosting, WordPress customization, and Razorpay payment gateway integration across production client applications.</li>
+              </ul>
+            </div>
+            
+            <!-- LSOYS Games -->
+            <div class="timeline-card glass-card-custom">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">FEB 2025 – MAY 2025</span>
+              <h4 class="timeline-role">Android Developer Intern</h4>
+              <div class="timeline-org">LSOYS Games and Apps, Pune</div>
+              <ul class="timeline-bullets">
+                <li>Developed native Android applications including <em>Fixora</em> and <em>Car Parking</em> using Java & XML with role-based features and Firebase data management.</li>
+                <li>Built <em>QuakeCast</em> and <em>Green-Revive</em> by integrating Weather APIs, Firebase, and Machine Learning APIs for real-time disaster updates and plant health diagnostics.</li>
+                <li>Designed interactive Figma prototypes and built responsive, user-centered Android interfaces.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <h3 class="h4 mb-4 d-flex align-items-center gap-2" style="color: #818cf8;">
+            <i class="fa-solid fa-graduation-cap"></i> Academic Qualifications
+          </h3>
+
+          <div class="timeline-container">
+            
+            <!-- PICT Degree -->
+            <div class="timeline-card glass-card-custom">
+              <div class="timeline-dot" style="border-color: #818cf8; box-shadow: 0 0 10px #818cf8;"></div>
+              <span class="timeline-period" style="color: #818cf8;">SEPT 2024 – JUNE 2027</span>
+              <h4 class="timeline-role">Pune Institute Of Computer Technology (PICT)</h4>
+              <div class="timeline-org">Bachelor of Engineering - Information Technology</div>
+              <p class="timeline-desc mb-3">
+                Outstanding academic record with a cumulative <strong>CGPA of 9.68</strong>. Focus on Advanced Algorithms, Software Engineering, DBMS, Computer Networks, and System Design.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge-custom">CGPA: 9.68</span>
+                <span class="badge-custom badge-cyan">BE IT Department</span>
+              </div>
+            </div>
+
+            <!-- Bharati Vidyapeeth Diploma -->
+            <div class="timeline-card glass-card-custom">
+              <div class="timeline-dot" style="border-color: var(--accent-emerald); box-shadow: 0 0 10px var(--accent-emerald);"></div>
+              <span class="timeline-period" style="color: var(--accent-emerald);">SEPT 2021 – JUNE 2024</span>
+              <h4 class="timeline-role">Bharati Vidyapeeth University, Pune</h4>
+              <div class="timeline-org">Diploma in Computer Technology</div>
+              <p class="timeline-desc mb-3">
+                Graduated with Distinction scoring <strong>95.14%</strong>. Strong foundation in object-oriented programming, data structures, and database principles.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge-custom badge-emerald">Percentage: 95.14%</span>
+                <span class="badge-custom badge-amber">State Rank #212</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SECTION -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mx-auto" data-aos="fade-up">
+        <div class="section-tag">// 03. Featured Work</div>
+        <h2 class="section-title-main">Featured Technical Projects</h2>
+        <p class="section-desc mx-auto">Innovative desktop, web, and mobile systems built with modern engineering stacks.</p>
+      </div>
+
+      <!-- Project Category Filter Buttons -->
+      <div class="project-filter-container" data-aos="fade-up">
+        <button class="filter-btn-custom active" data-filter="all">All Projects (3)</button>
+        <button class="filter-btn-custom" data-filter="ai">AI & Desktop (1)</button>
+        <button class="filter-btn-custom" data-filter="mobile">Mobile & Flutter (2)</button>
+        <button class="filter-btn-custom" data-filter="web">Web & Enterprise (2)</button>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Project 1: OSPilot -->
+        <div class="col-lg-4 col-md-6 project-col-item" data-category="ai web" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-custom">
+            <div class="project-card-banner">
+              <span class="project-featured-tag" style="color: #f43f5e;">⚡ Open Source AI</span>
+              <i class="fa-solid fa-robot project-banner-icon"></i>
+            </div>
+            <div class="project-card-body">
+              <div class="project-date">MAY 2026 – JUN 2026</div>
+              <h3 class="project-title">OSPilot (Offline AI Assistant)</h3>
+              <ul class="project-desc-list">
+                <li>Built an offline AI desktop assistant combining Electron and FastAPI, powered by local Ollama LLMs and a LangGraph multi-agent architecture with parallel execution.</li>
+                <li>Implemented a local RAG document engine with FAISS & SQLite, system monitoring, AI coding assistant, and desktop automation via Playwright and PyAutoGUI.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag-pill">Python</span>
+                <span class="tech-tag-pill">FastAPI</span>
+                <span class="tech-tag-pill">LangGraph</span>
+                <span class="tech-tag-pill">Ollama</span>
+                <span class="tech-tag-pill">FAISS</span>
+                <span class="tech-tag-pill">Electron</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/VivekPatil-2006/OSPilot" target="_blank" class="project-link-btn">
+                  <i class="fab fa-github"></i> GitHub Code <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+                <button class="project-link-btn border-0 bg-transparent" onclick="openProjectModal('ospilot')">
+                  <i class="fa-solid fa-circle-info"></i> Architecture
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: EcoVation -->
+        <div class="col-lg-4 col-md-6 project-col-item" data-category="mobile web" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-custom">
+            <div class="project-card-banner">
+              <span class="project-featured-tag" style="color: #fbbf24;">🏆 SIH Hackathon Project</span>
+              <i class="fa-solid fa-recycle project-banner-icon"></i>
+            </div>
+            <div class="project-card-body">
+              <div class="project-date">AUG 2025 – SEPT 2025</div>
+              <h3 class="project-title">EcoVation</h3>
+              <ul class="project-desc-list">
+                <li>Built a multi-role waste management platform integrating Citizen, Waste Worker, Green Champion, ULB Operator, and State Analyst modules across Android and Web.</li>
+                <li>Implemented real-time waste tracking, verification, route management, Green Points rewards, and a recycling marketplace using Supabase & Node.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag-pill">Flutter</span>
+                <span class="tech-tag-pill">React</span>
+                <span class="tech-tag-pill">Node.js</span>
+                <span class="tech-tag-pill">Supabase</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/VivekPatil-2006/SIH-Waste-Management" target="_blank" class="project-link-btn">
+                  <i class="fab fa-github"></i> GitHub Code <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+                <button class="project-link-btn border-0 bg-transparent" onclick="openProjectModal('ecovation')">
+                  <i class="fa-solid fa-circle-info"></i> Architecture
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: MentorTrack -->
+        <div class="col-lg-4 col-md-6 project-col-item" data-category="mobile web" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card-custom">
+            <div class="project-card-banner">
+              <span class="project-featured-tag" style="color: #38bdf8;">🎓 Academic PBL</span>
+              <i class="fa-solid fa-chalkboard-user project-banner-icon"></i>
+            </div>
+            <div class="project-card-body">
+              <div class="project-date">JAN 2025 – MAR 2025</div>
+              <h3 class="project-title">MentorTrack</h3>
+              <ul class="project-desc-list">
+                <li>Developed a role-based academic mentoring platform with dedicated Admin, Technician, Teacher, and Student portals with secure authentication.</li>
+                <li>Implemented CSV bulk student onboarding, mentor assignment, meeting scheduling, placement reports, and AI-powered internship insights.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag-pill">Android</span>
+                <span class="tech-tag-pill">React</span>
+                <span class="tech-tag-pill">Node.js</span>
+                <span class="tech-tag-pill">Firebase</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/VivekPatil-2006/MentorTrack-PBL" target="_blank" class="project-link-btn">
+                  <i class="fab fa-github"></i> GitHub Code <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+                <button class="project-link-btn border-0 bg-transparent" onclick="openProjectModal('mentortrack')">
+                  <i class="fa-solid fa-circle-info"></i> Architecture
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub Callout Banner -->
+      <div class="mt-5" data-aos="fade-up">
+        <div class="github-banner-card">
+          <h3 class="h4 mb-2 text-white font-weight-bold">Explore More Code Repositories on GitHub</h3>
+          <p class="text-secondary mb-4 mx-auto" style="max-width: 550px;">
+            Check out my GitHub profile for open-source repositories, mini projects, DSA implementations, and mobile practice applications.
+          </p>
+          <a href="https://github.com/VivekPatil-2006" target="_blank" class="btn-primary-custom text-decoration-none">
+            <i class="fab fa-github"></i> Visit github.com/VivekPatil-2006
           </a>
         </div>
       </div>
 
-      <div class="col-md-5 text-center" data-aos="fade-left">
-        <img src="profile.png" class="profile-img" alt="Vivek Patil">
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS SECTION -->
+  <section id="skills" class="section-padding" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header text-center mx-auto" data-aos="fade-up">
+        <div class="section-tag">// 04. Technical Stack</div>
+        <h2 class="section-title-main">Skills & Competencies</h2>
+        <p class="section-desc mx-auto">Languages, frameworks, databases, and core computer science fundamentals.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Programming Languages -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+              <h4 class="category-title">Languages</h4>
+            </div>
+            <div class="skill-pills-wrapper">
+              <span class="skill-item-badge"><i class="devicon-cplusplus-plain"></i> C++</span>
+              <span class="skill-item-badge"><i class="devicon-java-plain"></i> Java</span>
+              <span class="skill-item-badge"><i class="devicon-python-plain"></i> Python</span>
+              <span class="skill-item-badge"><i class="devicon-javascript-plain"></i> JavaScript</span>
+              <span class="skill-item-badge"><i class="devicon-azuresqldatabase-plain"></i> SQL</span>
+              <span class="skill-item-badge"><i class="devicon-html5-plain"></i> HTML5/CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Platforms -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h4 class="category-title">Frameworks & AI</h4>
+            </div>
+            <div class="skill-pills-wrapper">
+              <span class="skill-item-badge"><i class="devicon-flutter-plain"></i> Flutter</span>
+              <span class="skill-item-badge"><i class="devicon-android-plain"></i> Android SDK</span>
+              <span class="skill-item-badge"><i class="devicon-react-original"></i> React.js</span>
+              <span class="skill-item-badge"><i class="devicon-nodejs-plain"></i> Node.js</span>
+              <span class="skill-item-badge"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+              <span class="skill-item-badge"><i class="fa-solid fa-diagram-project"></i> LangGraph</span>
+              <span class="skill-item-badge"><i class="devicon-electron-original"></i> Electron</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-database"></i></div>
+              <h4 class="category-title">Databases</h4>
+            </div>
+            <div class="skill-pills-wrapper">
+              <span class="skill-item-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+              <span class="skill-item-badge"><i class="devicon-supabase-plain"></i> Supabase</span>
+              <span class="skill-item-badge"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+              <span class="skill-item-badge"><i class="devicon-firebase-plain"></i> Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & IDEs -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h4 class="category-title">Tools & IDEs</h4>
+            </div>
+            <div class="skill-pills-wrapper">
+              <span class="skill-item-badge"><i class="devicon-androidstudio-plain"></i> Android Studio</span>
+              <span class="skill-item-badge"><i class="devicon-git-plain"></i> Git & GitHub</span>
+              <span class="skill-item-badge"><i class="devicon-postman-plain"></i> Postman</span>
+              <span class="skill-item-badge"><i class="devicon-vscode-plain"></i> VS Code</span>
+              <span class="skill-item-badge"><i class="devicon-intellij-plain"></i> IntelliJ IDEA</span>
+              <span class="skill-item-badge"><i class="devicon-figma-plain"></i> Figma</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Core CS Chips -->
+      <div class="mt-4 text-center" data-aos="fade-up">
+        <h5 class="text-secondary font-mono mb-3" style="font-size: 0.95rem;">CORE COMPUTER SCIENCE SUBJECTS</h5>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="cs-chip">Object-Oriented Programming (OOP)</span>
+          <span class="cs-chip">Data Structures & Algorithms (DSA)</span>
+          <span class="cs-chip">Operating Systems (OS)</span>
+          <span class="cs-chip">Computer Networks (CN)</span>
+          <span class="cs-chip">Database Management Systems (DBMS)</span>
+        </div>
       </div>
 
     </div>
+  </section>
 
-    <!-- SCROLL INDICATOR (ADDED) -->
-    <div class="scroll-indicator">
-      <span>Scroll Down</span>
-      <i class="fa-solid fa-chevron-down"></i>
+  <!-- ACHIEVEMENTS SECTION -->
+  <section id="achievements" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mx-auto" data-aos="fade-up">
+        <div class="section-tag">// 05. Honors & Awards</div>
+        <h2 class="section-title-main">Key Achievements</h2>
+        <p class="section-desc mx-auto">Recognition for academic excellence, technical innovation, and competitive performance.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="achievement-card">
+            <div class="achievement-icon-box"><i class="fa-solid fa-trophy"></i></div>
+            <div>
+              <div class="achievement-title">State Rank #212</div>
+              <div class="achievement-desc">Secured a State Rank of #212 among 50,000+ candidate students.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="achievement-card">
+            <div class="achievement-icon-box"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <div class="achievement-title">Best Performer Award</div>
+              <div class="achievement-desc">Awarded during the Advanced Java Internship Program at PCA Academy.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="achievement-card">
+            <div class="achievement-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+            <div>
+              <div class="achievement-title">Innovative Engineer</div>
+              <div class="achievement-desc">Earned the Innovative Engineer Award for technical creativity and problem-solving.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="achievement-card">
+            <div class="achievement-icon-box"><i class="fa-solid fa-medal"></i></div>
+            <div>
+              <div class="achievement-title">1st Prize Winner</div>
+              <div class="achievement-desc">Won First Prize in a National-Level General Knowledge Test.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section-padding" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header text-center mx-auto" data-aos="fade-up">
+        <div class="section-tag">// 06. Get In Touch</div>
+        <h2 class="section-title-main">Let's Connect</h2>
+        <p class="section-desc mx-auto">Open for Software Engineering, Android/Flutter development roles, and project collaborations.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Direct Contact Info -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card-custom h-100">
+            <h3 class="h4 mb-4 text-white">Contact Information</h3>
+            
+            <div class="contact-info-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Direct Email</div>
+                <div class="contact-value">vivekjpatil04@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91 9529592099</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <div class="contact-label">Institution</div>
+                <div class="contact-value">PICT Pune (BE IT)</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <a href="https://linkedin.com/in/vivekpatil06" target="_blank" class="contact-value text-decoration-none text-info">
+                  linkedin.com/in/vivekpatil06 <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8rem;"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <a href="https://github.com/VivekPatil-2006" target="_blank" class="contact-value text-decoration-none text-info">
+                  github.com/VivekPatil-2006 <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8rem;"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card-custom">
+            <h3 class="h4 mb-4 text-white">Send a Message</h3>
+
+            <!-- In-Page Form Success Container (Prevents any blank/untitled page redirect) -->
+            <div id="formSuccessBox" style="display:none;"></div>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label text-secondary" style="font-size: 0.88rem;">Your Name</label>
+                  <input type="text" id="contactName" name="name" class="form-control-custom" placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-secondary" style="font-size: 0.88rem;">Your Email</label>
+                  <input type="email" id="contactEmail" name="email" class="form-control-custom" placeholder="john@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-secondary" style="font-size: 0.88rem;">Subject</label>
+                  <input type="text" id="contactSubject" name="subject" class="form-control-custom" placeholder="Software Developer Role / Project Inquiry" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-secondary" style="font-size: 0.88rem;">Message</label>
+                  <textarea id="contactMessage" name="message" class="form-control-custom" rows="5" placeholder="Hi Vivek, I'd like to discuss an opportunity..." required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-primary-custom w-100">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom text-center">
+    <div class="container">
+      <p class="mb-2">
+        © 2026 <strong>Vivek Patil</strong>. Built with modern HTML5, CSS3, and JavaScript.
+      </p>
+      <p class="text-muted small mb-0">
+        PICT BE IT Student (CGPA 9.68 | Diploma 95.14%) • Software Developer
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Social Dock -->
+  <div class="floating-social-dock">
+    <a href="https://github.com/VivekPatil-2006" target="_blank" class="dock-icon" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/vivekpatil06" target="_blank" class="dock-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:vivekjpatil04@gmail.com" class="dock-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="resume.pdf" target="_blank" class="dock-icon" title="Resume"><i class="fa-solid fa-file-arrow-down"></i></a>
   </div>
-</section>
 
-<!-- SUMMARY -->
-<section class="section" data-aos="fade-up">
-  <div class="container">
-    <h2 class="section-title">Professional Summary</h2>
+  <!-- Floating Back To Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-    <p class="summary text-center">
-      High-performing Information Technology undergraduate with strong academic excellence
-      and hands-on experience in Android development, full-stack web applications,
-      and database-driven systems. Proven ability to design scalable solutions,
-      work with cross-functional teams, and deliver real-world software products.
-    </p>
-
-    <p class="summary text-center mt-3">
-      <strong>Internships:</strong> Android Developer Intern at LSOYS Games & Apps |
-      Advanced Java Intern at Pragati Institute
-    </p>
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-notification">
+    <i id="toastIcon" class="fa-solid fa-check-circle"></i>
+    <span id="toastText">Notification message</span>
   </div>
-</section>
 
-<!-- TECHNICAL SKILLS -->
-<section class="section bg-soft" data-aos="fade-up">
-  <div class="container">
-    <h2 class="section-title">Technical Skills</h2>
-
-    <div class="skill-vertical-card">
-      <h4><i class="fa-solid fa-code"></i> Programming Languages</h4>
-      <div class="skill-icons">
-        <i class="devicon-c-plain"></i>
-        <i class="devicon-cplusplus-plain"></i>
-        <i class="devicon-java-plain"></i>
-        <i class="devicon-python-plain"></i>
-        <i class="devicon-php-plain"></i>
-        <i class="devicon-javascript-plain"></i>
-      </div>
-    </div>
-
-    <div class="skill-vertical-card">
-      <h4><i class="fa-solid fa-book"></i> Core Computer Science</h4>
-      <div class="core-tags">
-        <span>OOP</span>
-        <span>DBMS</span>
-        <span>Data Structures & Algorithms</span>
-        <span>Operating Systems</span>
-        <span>Computer Networks</span>
-      </div>
-    </div>
-
-    <div class="skill-vertical-card">
-      <h4><i class="fa-solid fa-layer-group"></i> Frameworks & Technologies</h4>
-      <div class="skill-icons">
-        <i class="devicon-android-plain"></i>
-        <i class="devicon-react-original"></i>
-        <i class="devicon-nodejs-plain"></i>
-        <i class="devicon-fastapi-plain"></i>
-        <i class="devicon-firebase-plain"></i>
-      </div>
-    </div>
-
-    <div class="skill-vertical-card">
-      <h4><i class="fa-solid fa-laptop-code"></i> Tools & IDEs</h4>
-      <div class="core-tags">
-        <span>Android Studio</span>
-        <span>VS Code</span>
-        <span>IntelliJ IDEA</span>
-        <span>Eclipse</span>
-        <span>Git</span>
+  <!-- Interactive Project Detail Modal -->
+  <div class="modal fade modal-glass-custom" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title h5 font-weight-bold" id="projectModalTitle">Project Architecture</h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="projectModalBody">
+          <!-- Dynamic Modal Content -->
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<footer>
-  © 2026 Vivek Patil | Designed with ❤️
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000, once: true });
-</script>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
